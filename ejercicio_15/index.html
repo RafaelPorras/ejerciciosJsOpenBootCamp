@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+En este ejercicio, lo primero que tendréis que crear es un archivo HTML 
+que contenga un header con un título y una sección que contendrá un botón 
+y un mapa. Al pulsar el botón se hará una llamada al script y mostrará vuestra 
+localización en un mapa.
+En el script, crearéis una función que se llamará verLocalizacion donde 
+se utilizará el método getCurrentPosition y le pasaréis como parámetros las 
+funciones verPosicion y verError.
+En la función verPosicion le pasaremos como parámetro nuestra posición.
+Dentro de la función crearéis dos variables: una contendrá las coordenadas de 
+nuestra posición (latitud y altitud) y la otra variable tendrá la imagen de 
+google maps con nuestra posición para luego insertarlo en el div que hemos 
+creado con su identificador para que muestre el mapa.
+Y la función verError contendrá los casos de error con los que nos podremos encontrar.
+-->    
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header>Geolocalizacion</header>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
