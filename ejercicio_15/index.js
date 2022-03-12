@@ -7,11 +7,8 @@ function initMap() {
   });
   infoWindow = new google.maps.InfoWindow();
 
-  const locationButton = document.createElement("button");
+  const locationButton = document.getElementById('btn-mostrar');
 
-  locationButton.textContent = "Pulsar para geolocalizacion";
-  locationButton.classList.add("custom-map-control-button");
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {

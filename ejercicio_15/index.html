@@ -20,12 +20,16 @@ Y la función verError contendrá los casos de error con los que nos podremos en
   <head>
     <title>Geolocation</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
     <script src="./index.js"></script>
   </head>
   <body>
     <header>Geolocalizacion</header>
-    <div id="map"></div>
+    <section>
+        <div id="map"></div>
+        <button id="btn-mostrar"></button>
+    </section>
+    
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
