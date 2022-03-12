@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Vamos a realizar ahora una especie de "juego" en el que tendremos 
+    que adivinar las coordenadas de un lugar emblemático del mundo 
+    de entre tres opciones. 
+    La manera de seleccionar una respuesta será copiando las coordenadas.
+
+    Al copiar la línea correcta, 
+    un aviso los aparecerá en la pantalla mediante un alert, 
+    si no acertamos también lo notificará.
+-->    
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_13_02</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <select id="coordenadas">
+            <option value="-1">Acierta las coordenadas</option>
+            <option data-latitud="48.8583701" data-longitud="2.2944813" value="1">Latitud 48.8583701 Lontitud 2.2944813</option>
+            <option data-latitud="49.8583701" data-longitud="3.2944813" value="2">Latitud 49.8583701 Lontitud 3.2944813</option>
+            <option data-latitud="50.8583701" data-longitud="4.2944813" value="3">Latitud 50.8583701 Lontitud 4.2944813</option>
+        </select>
+        <input type="button" value="Confirmar" id="btn-confirmar"/>
+    </div>
+</body>
+</html>
